@@ -9,6 +9,17 @@
     ]
   },
   "Packages": {
+    "glue": {
+      "Package": "glue",
+      "Version": "1.7.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "methods"
+      ],
+      "Hash": "e0b3a53876554bd45879e596cdb10a52"
+    },
     "renv": {
       "Package": "renv",
       "Version": "1.0.7",
