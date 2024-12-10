@@ -8,3 +8,7 @@ intro("Shelmith", "Senior Data Analyst", "Kenya")
 x = "Variable A"
 
 glue::glue("{x} = 5")
+
+install.packages('pak')
+
+pak::pak('simonpcouch/pal')
