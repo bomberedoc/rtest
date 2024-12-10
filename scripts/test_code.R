@@ -12,3 +12,8 @@ glue::glue("{x} = 5")
 install.packages('pak')
 
 pak::pak('simonpcouch/pal')
+
+library(pal)
+
+options(.pal_fn = "chat_ollama",
+        .pal_args = list(model = "qwen2.5-coder:14b"))
