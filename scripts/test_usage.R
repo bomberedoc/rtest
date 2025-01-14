@@ -61,3 +61,16 @@ ggplot(airquality, aes(x = Solar.R, y = Ozone)) +
   theme_classic()
 ```
 This R code will create a simple scatterplot where the x-axis represents Solar.R (the amount of direct sunshine) and the y-axis represents Ozone levels, using viridis color palette for coloring.
+
+# ellmer usage
+library(ellmer)
+
+my_function <- function(chat_str) {
+  chat <- chat_ollama(
+    model = "llama3.2:1b",
+    system_prompt = "You are a friendly but terse assistant.",
+  )
+  chat$chat(chat_str)
+}
+
+my_function("What are some common uses of R?")
